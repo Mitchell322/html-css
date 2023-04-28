@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*
+Tudo em HTML que for "id", no CSS chamamos de "#".
+
+Tudo em HTML que for "class", no CSS chamamos de ".".
+
+Usamos a idententações "id e class" de formas diferentes. A classe "id", é usada somente uma vez para identificar um elemento, já a classe "class", pode ser usada diversas vezes para separar um elemento do outro.
+
+*/
+
+body {
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: lightblue;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: darkgrey;
+}
+
+h2 {
+    color: lightgreen;
+}

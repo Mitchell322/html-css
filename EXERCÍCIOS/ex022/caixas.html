@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        header > h1 {
+            display: block;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        nav > a:hover {
+        text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #assuntos {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        aside {
+            background-color: rgb(179, 177, 177);
+        }
+
+        aside > p {
+            text-decoration: underline;
+            margin: 3px;
+            padding: 5px;
+        }
+
+        footer {
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Seu logo</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Produtos</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos" >
+            <h2>Mundo otaku</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero provident illo at ullam repellendus ex consectetur quibusdam, quisquam id atque autem harum natus inventore magnam, nemo, sequi voluptatem optio cupiditate?</p>
+        </section>
+        <section >
+            <article id="noticias">
+                <h2>Notícias do mundo ANIME:</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit distinctio beatae voluptatum maiores unde laudantium perferendis obcaecati impedit vitae quo eos dignissimos cumque dolore tenetur temporibus eveniet, expedita ipsam consequatur.</p>
+                <aside>
+                    <p>Rafael Portugal</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por AMSTUDIO</p>
+    </footer>
+</body>
+</html>
