@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Poppins:wght@100;400;700;800;900&family=Sriracha&display=swap');
+
+:root {
+    --font01: 'poppins', sans-serif;
+}
+
+body {
+    background-color: bisque;
+    font-family: var(--font01);
+    padding: 20px;
+}
+
+.bg-info {
+    background-color: rgba(250, 207, 151, 0.671);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+article > h1 {
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
+    margin: 10px;
+}
+
+article > h2 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+article > p {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* direçoes das propriedades*/
+
+/* direçoes de flex-direction*/
+.direcao {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.direcao-2 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.direcao-3 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.direcao-4 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* fim das direçoes de flex-direction*/
+
+/* direçoes de justify-content*/
+.direcao-5 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.direcao-6 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.direcao-7 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.direcao-8 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.direcao-9 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.direcao-10 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* fim das direçoes de justify-content*/
+
+/* direçoes de align-items*/
+.direcao-11 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.direcao-12 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.direcao-13 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.direcao-14 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.direcao-15 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* fim das direçoes de align-items*/
+
+/* fim das direçoes das propriedades */
+
+/* filhos das direçoes das propriedades */
+.child-1 {
+    height: 150px;
+    width: 150px;
+    background-color: violet;
+    border-radius: 10px;
+}
+
+.child-2 {
+    height: 150px;
+    width: 150px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.child-3 {
+    height: 150px;
+    width: 150px;
+    background-color: lightpink;
+    border-radius: 10px;
+}
+/* fim dos filhos das direçoes das propriedades */
+
+/* filhos das direçoes da propriedade "stretch" */
+.child-4 {
+    width: 150px;
+    background-color: violet;
+    border-radius: 10px;
+}
+
+.child-5 {
+    width: 150px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.child-6 {
+    width: 150px;
+    background-color: lightpink;
+    border-radius: 10px;
+}
+/* fim dos filhos das direçoes da propriedade "stretch" */
+
+/* filhos das direçoes da propriedade "baseline" */
+.child-7 {
+    height: 150px;
+    width: 150px;
+    background-color: violet;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.child-8 {
+    height: 150px;
+    width: 150px;
+    background-color: lightblue;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+.child-9 {
+    height: 150px;
+    width: 150px;
+    background-color: lightpink;
+    border-radius: 10px;
+    font-size: 2em;
+}
+/* fim dos filhos das direçoes da propriedade "baseline" */
+
+footer {
+    color: black;
+    text-align: center;
+}
+
+footer, p > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
