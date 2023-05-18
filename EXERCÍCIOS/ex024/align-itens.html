@@ -8,12 +8,52 @@
     <title>Align-items</title>
 </head>
 <body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+
+                <li><a href="flex-direction.html">Flex-directon</a></li>
+
+                <li><a href="align-itens.html">Algin-items</a></li>
+
+                <li><a href="justify-content.html">Jusify-content</a></li>
+
+                <li><a href="#">Flex-wrap</a></li>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Home</a></li>
+                
+                <li><a href="#">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
     <main>
-            <section class="flex-direction"> <!-- começo do flex-diretion-->
+            <section> <!-- começo do Align-items-->
                 <article class="bg-info">
                   <h1>Align-items</h1>
+                  <p>A propriedade CSS <strong>align-items</strong> é usada em conjunto com o modelo de layout flexbox para controlar o alinhamento dos elementos ao longo do eixo transversal (eixo perpendicular) dentro de um contêiner flexível. Ela define como os itens flexíveis são posicionados verticalmente dentro do contêiner.</p>
+                  <p>A propriedade <strong>align-items</strong> afeta todos os itens dentro do contêiner flexível. No entanto, é possível substituir o alinhamento individual de um item usando a propriedade <strong>align-self</strong> aplicada diretamente ao item.
+
+                    Essa propriedade é útil para controlar a posição vertical dos itens flexíveis dentro de um contêiner, permitindo criar layouts flexíveis e responsivos.</p>
+                    	
+                    <p>A propriedade align-items aceita os seguintes valores:</p>
                   <h2>align-items: flex-start;</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                    <p><strong>flex-start:</strong> Os itens são alinhados no início do contêiner ao longo do eixo transversal. Eles estarão no topo, se a direção principal for horizontal, ou à esquerda, se a direção principal for vertical. <br>
+                    Para que nossos elementos fique direcionanos horizontalmente junto ao <strong>align-itens</strong>, precisamos usar uma propriedade que nos forneça controle sobre o posicionamento horizontal, como a propriedade <strong>justify-content.</strong></p>
+
+                    <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            display: flex; <br>
+                            justify-content: center; <br>
+                            align-items: flex-start;
+                        </strong>
+                    </p>
 
                     <div class="direcao-11">
                         <div class="child-1">01</div>
@@ -24,7 +64,16 @@
 
                 <article class="bg-info">
                     <h2>align-items: flex-end;</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                      <p><strong>flex-end:</strong> Os itens são alinhados no final do contêiner ao longo do eixo transversal. Eles estarão na parte inferior, se a direção principal for horizontal, ou à direita, se a direção principal for vertical.</p>
+
+                      <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            display: flex; <br>
+                            justify-content: center; <br>
+                            align-items: flex-end;
+                        </strong>
+                    </p>
   
                       <div class="direcao-12">
                           <div class="child-1">01</div>
@@ -35,7 +84,15 @@
 
                   <article class="bg-info">
                     <h2>align-items: center;</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                      <p><strong>center:</strong> Os itens são centralizados verticalmente dentro do contêiner ao longo do eixo transversal.</p>
+
+                      <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            display: flex; <br>
+                            justify-content: center; <br>
+                            align-items: center;
+                        </strong>
   
                       <div class="direcao-13">
                           <div class="child-1">01</div>
@@ -46,7 +103,15 @@
 
                   <article class="bg-info">
                     <h2>align-items: stretch;</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                      <p><strong>stretch (valor padrão):</strong> Os itens são esticados para preencher o contêiner verticalmente. Se necessário, eles serão redimensionados para ter a mesma altura.</p>
+
+                      <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            display: flex; <br>
+                            justify-content: center; <br>
+                            align-items: stretch;
+                        </strong>
   
                       <div class="direcao-14">
                           <div class="child-4">01</div>
@@ -57,7 +122,17 @@
 
                   <article class="bg-info">
                     <h2>align-items: baseline;</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                      <p><strong>baseline:</strong> Os itens são alinhados com suas linhas de base. A linha de base é determinada pelo conteúdo do item, como o texto dentro de um elemento de texto. <br>
+                      Para mostrar como isso funciona, usamos a tag &lt;p&gt; e colocamos cada número com seu respectivo tamanho, <strong>01</strong> com 1em, <strong>02</strong> com 1.5em e <strong>03</strong> com 2em.</p>
+                    
+
+                      <p>
+                          <strong>
+                            display: flex; <br>
+                            justify-content: center; <br>
+                            align-items: baseline;
+                                              </strong>
+                      </p>
   
                       <div class="direcao-15">
                           <div class="child-7">01</div>

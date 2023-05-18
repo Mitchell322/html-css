@@ -8,12 +8,50 @@
     <title>Justify-content</title>
 </head>
 <body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+
+                <li><a href="flex-direction.html">Flex-directon</a></li>
+
+                <li><a href="align-itens.html">Algin-items</a></li>
+
+                <li><a href="justify-content.html">Jusify-content</a></li>
+
+                <li><a href="#">Flex-wrap</a></li>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
     <main>
-            <section class="flex-direction"> <!-- começo do flex-diretion-->
+            <section> <!-- começo do Justify-content-->
                 <article class="bg-info">
                   <h1>Justify-content</h1>
+                  <p>A propriedade CSS <strong>justify-content</strong> é usada em conjunto com o modelo de layout flexbox para controlar o alinhamento dos elementos ao longo do eixo principal (eixo de fluxo) dentro de um contêiner flexível. Ela define como os itens flexíveis são posicionados horizontalmente dentro do contêiner.</p>
+
+                  <p>A propriedade <strong>justify-content</strong> afeta todos os itens dentro do contêiner flexível. No entanto, é possível substituir o alinhamento individual de um item usando a propriedade <strong>justify-self</strong> aplicada diretamente ao item.</p>
+                  <p>Essa propriedade é útil para controlar a posição horizontal dos itens flexíveis dentro de um contêiner, permitindo criar layouts flexíveis e responsivos. Ela oferece diversas opções para distribuir, alinhar e espaçar os itens ao longo do eixo principal.</p>
+
+
+                  <p>A propriedade <strong>justify-content</strong> aceita os seguintes valores:</p>
                   <h2>Justify-content: flex-start;</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                    <p><strong>flex-start (valor padrão):</strong> Os itens são alinhados no início do contêiner ao longo do eixo principal. Eles estarão à esquerda, se a direção principal for horizontal, ou no topo, se a direção principal for vertical.</p>
+                    <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            display: flex; <br>
+                            justify-content: flex-start;
+                        </strong>
+                    </p>
 
                     <div class="direcao-5">
                         <div class="child-1">01</div>
@@ -23,8 +61,15 @@
                 </article>
 
                 <article class="bg-info">
-                    <h2>Justify-content: flex-end;</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                    <h2><strong>Justify-content:</strong> flex-end;</h2>
+                      <p><strong>flex-end:</strong> Os itens são alinhados no final do contêiner ao longo do eixo principal. Eles estarão à direita, se a direção principal for horizontal, ou na parte inferior, se a direção principal for vertical.</p>
+                      <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            display: flex; <br>
+                            justify-content: flex-end;
+                        </strong>
+                    </p>
   
                       <div class="direcao-6">
                           <div class="child-1">01</div>
@@ -35,7 +80,15 @@
 
                   <article class="bg-info">
                     <h2>Justify-content: center;</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                      <p><strong>center:</strong> Os itens são centralizados horizontalmente dentro do contêiner ao longo do eixo principal.</p>
+
+                      <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            display: flex; <br>
+                            justify-content: center;
+                        </strong>
+                    </p>
   
                       <div class="direcao-7">
                           <div class="child-1">01</div>
@@ -46,7 +99,17 @@
 
                   <article class="bg-info">
                     <h2>Justify-content: space-around;</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                      <p><strong>space-around:</strong> Os itens são distribuídos igualmente ao longo do eixo principal, com espaços em branco antes, entre e após eles. Ou seja, há espaço igual antes do primeiro item e após o último item, e os espaços entre os itens são iguais. <br>
+                      Porém, está propriedade divide os espaços que estão entre cada elemento, ou seja, ele adiciona automaticamente uma margem para cada elemento, logo, o elemento <strong>01</strong> estará com um <strong>margin-left</strong> e um <strong>margin-right</strong> no mesmo elemento. após isso, o elemento que está ao centro dos objetos, estará com uma distância maior de margin-left do elemento 01 e margin-rigth do elemento 02 dos objetos que estarão nas pontas do espaço disponibilizado.
+                    </p>
+
+                      <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            display: flex; <br>
+                            justify-content: space-around;
+                        </strong>
+                    </p>
   
                       <div class="direcao-8">
                           <div class="child-1">01</div>
@@ -57,7 +120,15 @@
 
                   <article class="bg-info">
                     <h2>Justify-content: space-between;</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                      <p><strong>space-between:</strong> Os itens são distribuídos igualmente ao longo do eixo principal, com espaços em branco entre eles. O primeiro item é alinhado ao início do contêiner e o último item é alinhado ao final.</p>
+
+                      <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            display: flex; <br>
+                            justify-content: space-between;
+                        </strong>
+                    </p>
   
                       <div class="direcao-9">
                           <div class="child-1">01</div>
@@ -68,7 +139,15 @@
 
                   <article class="bg-info">
                     <h2>Justify-content: space-evenly;</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                      <p><strong>space-evenly</strong>: Os itens são distribuídos igualmente ao longo do eixo principal, com espaços em branco antes, entre e após eles. Os espaços em branco são distribuídos de forma igualitária, incluindo o espaço antes do primeiro item e após o último item.</p>
+
+                      <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            display: flex; <br>
+                            justify-content: space-evenly;
+                        </strong>
+                    </p>
   
                       <div class="direcao-10">
                           <div class="child-1">01</div>

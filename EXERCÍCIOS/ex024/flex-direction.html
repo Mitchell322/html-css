@@ -8,12 +8,53 @@
     <title>Flex-direction</title>
 </head>
 <body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+
+                <li><a href="flex-direction.html">Flex-directon</a></li>
+
+                <li><a href="align-itens.html">Algin-items</a></li>
+
+                <li><a href="justify-content.html">Jusify-content</a></li>
+
+                <li><a href="#">Flex-wrap</a></li>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Home</a></li>
+                
+                <li><a href="#">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
     <main>
-            <section class="flex-direction"> <!-- começo do flex-diretion-->
+            <section> <!-- começo do flex-diretion-->
                 <article class="bg-info">
                   <h1>Flex-direction</h1>
+                  <p><strong>'flex-direction'</strong> é uma propriedade CSS que define a direção do fluxo dos elementos dentro de um contêiner flexível. Ela é usada em conjunção com o modelo de layout flexbox para controlar o posicionamento e a ordem dos itens em um contêiner flexível.</p>
+
+                    <p>Esses valores afetam a direção em que os elementos são posicionados no eixo principal do contêiner flexível. O eixo principal é determinado pela direção do fluxo definida pela propriedade <strong>'flex-direction'</strong>. O eixo transversal é perpendicular ao eixo principal.</p>
+
+                        <p>Além disso, a propriedade flex-direction também influencia a ordem em que os elementos são renderizados. Por padrão, os elementos são renderizados na ordem em que aparecem no código HTML, mas a ordem pode ser alterada usando propriedades como <strong>'order'</strong>.</p>
+                        
+                        <p>Em resumo, a propriedade flex-direction permite controlar a direção do fluxo e a ordem dos elementos em um contêiner flexível, facilitando a criação de layouts flexíveis e responsivos.</p>
+
+                    <p>Existem quatro valores possíveis para a propriedade flex-direction:</p>
                   <h2>flex-direction: row;</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                    <p>
+                        <strong>row:</strong> Os elementos são dispostos horizontalmente da esquerda para a direita. Este é o valor padrão se nenhum valor for especificado.</p>
+                    <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            Display: flex; <br>
+                            flex-direction: row;
+                        </strong>
+                    </p>
 
                     <div class="direcao">
                         <div class="child-1">01</div>
@@ -24,7 +65,15 @@
 
                 <article class="bg-info">
                     <h2>flex-direction: row-reverse;</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                      <p>row-reverse: Os elementos são dispostos horizontalmente da direita para a esquerda.</p>
+
+                      <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            Display: flex; <br>
+                            flex-direction: row-reverse;
+                        </strong>
+                      </p>
   
                       <div class="direcao-2">
                           <div class="child-1">01</div>
@@ -35,7 +84,15 @@
 
                   <article class="bg-info">
                     <h2>flex-direction: column;</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                      <p><strong>column:</strong> Os elementos são dispostos verticalmente de cima para baixo.</p>
+
+                      <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            Display: flex; <br>
+                            flex-direction: column;
+                        </strong>
+                      </p>
   
                       <div class="direcao-3">
                           <div class="child-1">01</div>
@@ -46,7 +103,15 @@
 
                   <article class="bg-info">
                     <h2>flex-direction: column-reverse;</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam ullam soluta animi cupiditate assumenda nobis ea eveniet esse rem, quasi perferendis fugit magni. Incidunt quibusdam voluptatem quo fugiat iure!</p>
+                      <p>column-reverse: Os elementos são dispostos verticalmente de baixo para cima.</p>
+
+                      <p> 
+                        Para que isso funcione, usamos as propriedades assim: <br>
+                        <strong>
+                            Display: flex; <br>
+                            flex-direction: column-reverse;
+                        </strong>
+                      </p>
   
                       <div class="direcao-4">
                           <div class="child-1">01</div>
